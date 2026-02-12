@@ -5,11 +5,14 @@ import Navbar from "./Components/UI/Navbar";
 import SectionWatcher from "./lib/SectionWatcher";
 import { Skills } from "./Pages/Skills";
 import Projects from "./Pages/Projects";
+import { Contact } from "./Pages/Contact";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <div className="min-h-screen w-screen bg-black relative">
       <SectionWatcher />
+      <Toaster />
       <div className="absolute inset-0 z-0">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
@@ -34,6 +37,9 @@ function App() {
       </div>
       <div className="relative z-10">
         <Projects />
+      </div>
+      <div className="relative z-10">
+        <Contact />
       </div>
     </div>
   );
