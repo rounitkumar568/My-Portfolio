@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+import { Button } from "./Button";
 import {
   Card,
   CardContent,
@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "@/components/ui/card";
+} from "./card";
 import { useState } from "react";
 
 type Project = {
